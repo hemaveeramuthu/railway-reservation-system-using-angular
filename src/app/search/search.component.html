@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>Search Trains</h1>
+    
+    <!-- Search Form -->
+    <div class="search-form">
+        <form (submit)="onSearch()">
+            <label for="origin">Origin:</label>
+            <select id="origin" name="origin" [(ngModel)]="origin">
+                <option value="">Select Origin</option>
+                <option value="Location 1">Location 1</option>
+                <option value="Location 2">Location 2</option>
+                <option value="Location 3">Location 3</option>
+                <option value="Location 4">Location 4</option>
+                <option value="Location 5">Location 5</option>
+                <option value="Location 6">Location 6</option>
+                <option value="Location 7">Location 7</option>
+                <option value="Location 8">Location 8</option>
+                <option value="Location 9">Location 9</option>
+                <option value="Location 10">Location 10</option>
+            </select>
+            
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" [(ngModel)]="destination">
+                <option value="">Select Destination</option>
+                <option value="Location 1">Location 1</option>
+                <option value="Location 2">Location 2</option>
+                <option value="Location 3">Location 3</option>
+                <option value="Location 4">Location 4</option>
+                <option value="Location 5">Location 5</option>
+                <option value="Location 6">Location 6</option>
+                <option value="Location 7">Location 7</option>
+                <option value="Location 8">Location 8</option>
+                <option value="Location 9">Location 9</option>
+                <option value="Location 10">Location 10</option>z
+            </select>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" [(ngModel)]="date">
+            
+            <button type="submit">Search</button>
+            <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+        </form>
+    </div>
+  
+    <!-- Search Results -->
+    <div class="search-results">
+        <!-- Display search results here -->
+    </div>
+</div>
